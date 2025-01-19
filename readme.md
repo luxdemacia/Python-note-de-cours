@@ -30,12 +30,13 @@ On remarquerez à la sortie:
 	-La
 	-Samaine
 ```
-Pour éviter celà, on peut regrouper les arguments dans le programme en utilisant ```" ".join()``` pour reconstituer la chaîne:
-Voir dans le programme ```Reglage_Arguments_complet.py```).
+Pour éviter celà, on peut regrouper les arguments dans le programme en utilisant ```" ".join()``` pour reconstituer la chaîne (```/Reglage_Arguments_complet.py```.
 
-```#On supprime la boucle for.
-		Arguments_complet = " ".join(self.Mon_Argument)
-		print(f"- {Arguments_complet}")```
+On supprime la boucle for.
+```
+	Arguments_complet = " ".join(self.Mon_Argument)
+	print(f"- {Arguments_complet}")
+```
 
 # La partie Programmation Orientée Objet
 
@@ -50,8 +51,8 @@ On a une poo du fait que le programme repose sur :
 → Une méthode : ```run``` qui définit le comportement de l'objet (agit sur les données).
 
 → Instances de classes (Objets) : ```reglage``` est créé dans la fonction ```Mis_a_jour``` en appelant le constructeur de la classe ```Reglage```
-```
-```
+
+
 ```Mis_a_jour``` est une fonction simple et non une méthode car elle n'est pas définie dans la classe.
 Elle ne respecte pas non plus le ```polymorphisme``` sinon on aurait un ```même nom de méthode``` ou de ```fonction``` que la class.
 On ne peut pas dire que la fonction ```Mis_a_jour``` hérite de la classe ```Reglage``` sinon on aurait:
