@@ -21,25 +21,29 @@
 #  
 #  
 
+
 import sys
 
-class Presenter:
-    def __init__(self, args):
-        self.args = args
 
-    def run(self):
-        if not self.args:
-            print("Aucun argument n'est fourni.")
-            return 1
-        print("Argument reçu par le Presenter:")
-        complete_arg = " ".join(self.args)
-        print(f"- {complete_arg}")
-        return 0
-
-def main(args):
-    # Point d'entrée pour le Presenter
-    presenter = Presenter(args)
-    return presenter.run()
-
+class Reglage:
+	def __init__(self, Mon_argument):
+		self.Mon_argument=Mon_argument
+	
+	def run(self):
+		if not self.Mon_argument:
+			print("Aucun argument n'est fourni.")
+			return 1
+		print("Argument reçu et effectué par le Réglage :")
+		# ~ On n'aura plus besoin de la boucle for
+		Arguments_complet = " ".join(self.Mon_argument)
+		print(f"- {Arguments_complet}")
+		return 0
+		
+	# ~ Point d'entrer
+def Mis_a_jour(Mon_argument):
+	reglage = Reglage(Mon_argument)
+	return reglage.run()
+	
 if __name__ == '__main__':
-    sys.exit(main(sys.argv[1:]))
+	sys.exit(Mis_a_jour(sys.argv[1:]))
+

@@ -25,24 +25,24 @@
 import sys
 
 
-class Presenter:
-	def __init__(self, args):
-		self.args=args
+class Reglage:
+	def __init__(self, Mon_argument):
+		self.Mon_argument=Mon_argument
 	
 	def run(self):
-		if not self.args:
+		if not self.Mon_argument:
 			print("Aucun argument n'est fourni.")
 			return 1
-		print("Argument reçu par se Prensenter:")
-		for arg in self.args:
+		print("Argument reçu et effectué par le Réglage :")
+		for arg in self.Mon_argument:
 			print(f"-{arg}")
 		return 0
 		
-def main(args):
-	# ~ Point d'entrer pour se présenter
-	presenter = Presenter(args)
-	return presenter.run()
+	# ~ Point d'entrer
+def Mis_a_jour(Mon_argument):
+	reglage = Reglage(Mon_argument) 
+	return reglage.run()
 	
 if __name__ == '__main__':
-	sys.exit(main(sys.argv[1:]))
+	sys.exit(Mis_a_jour(sys.argv[1:]))
 
