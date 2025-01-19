@@ -5,7 +5,7 @@ qui peut être utile pour faire des scripts & faire des automatisations.
 ```
 Allez dans le dossier /ProgrammationModlaire/
 ```
-```
+
 Exécutez la commande ```python Presenter.py```
 Vous remarquerez que notre programme attend un ou des arguments!
 C'est grâce à la bibliothèque ```sys``` et l'utilisation des arguments de lignes de commande via ```sys.argv```.
@@ -15,7 +15,7 @@ Maintenant, Exécutez la commande ```python Reglage.py Programme1 Programme2```
 → Argument reçu et effectué par le Réglage :
 	-Programme1
 	-Programme2
-```
+
 ## (Optionnel) Pour faire afficher un texte entier:
 ```
 Exécutez la commande ```python Presenter.py Programme1 De La Samaine```
