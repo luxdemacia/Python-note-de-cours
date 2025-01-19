@@ -2,23 +2,23 @@
 Ce guide permet de comprendre, en Python, la programmation orientée objet et modulaire
 qui peut être utile pour faire des scripts & faire des automatisations.
 
-```
-Allez dans le dossier /ProgrammationModlaire/
-```
-```
+
+Allez dans le dossier ```/ProgrammationModlaire/```
+
 Exécutez la commande 
 ```python Presenter.py```
 Vous remarquerez que notre programme attend un ou des arguments!
 C'est grâce à la bibliothèque ```sys``` et l'utilisation des arguments de lignes de commande via ```sys.argv```.
 Donc ```sys.argv``` est la clé pour transmettre des arguments
 Et  ```sys.argv[1:] ``` permet de recupérer ces arguments (en fin du code).
-Maintenant, Exécutez la commande ```python Reglage.py Programme1 Programme2```
+Maintenant, Exécutez la commande ```python Reglage.py Programme1 Programme2```.
+```
 → Argument reçu et effectué par le Réglage :
 	-Programme1
 	-Programme2
 ```
 ## (Optionnel) Pour faire afficher un texte entier:
-```
+
 En exécutant la commande :
 ```python Presenter.py Programme1 De La Samaine```
 
@@ -32,13 +32,13 @@ On remarquerez à la sortie:
 ```
 Pour éviter celà, on peut regrouper les arguments dans le programme en utilisant ```" ".join()``` pour reconstituer la chaîne:
 Voir dans le programme ```Reglage_Arguments_complet.py```).
-```	
+
 ```#On supprime la boucle for.
 		Arguments_complet = " ".join(self.Mon_Argument)
 		print(f"- {Arguments_complet}")```
-```
+
 # La partie Programmation Orientée Objet
-```
+
 On a une poo du fait que le programme repose sur :
 
 → Utilisation de classes : ```Reglage```.
@@ -62,7 +62,7 @@ Cependant, ```Mis_a_jour()``` est une ```interface``` simplifiée pour la classe
 
 Exemple : Au lieu de demander à l'utilisateur de créer un objet Reglage manuellement, la fonction Mis_a_jour s'en charge, simplifiant le processus pour l'utilisateur final.
 
-```
+
 # A suivre...
 
         
